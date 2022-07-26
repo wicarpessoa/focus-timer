@@ -1,0 +1,83 @@
+:root {
+  font-size: 62.5%;
+
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  border-box: box-sizing;
+}
+
+body {
+  display: flex;
+  background-color: #e5e5e5;
+  min-height: 100vh;
+}
+main {
+  margin: 19.6rem auto 18.8rem;
+  display: flex;
+  flex-direction: row;
+  gap: clamp(6rem, 5rem + 10vw, 19.2rem);
+
+  max-width: 82.1rem;
+  align-items: space-between;
+}
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.timer {
+  color: #323238;
+  font-size: clamp(8rem, 8rem + 3vw, 12.6rem);
+  line-height: 14.8rem;
+  display: flex;
+  justify-content: center;
+}
+#controls {
+  display: flex;
+  gap: 4rem;
+}
+.play,
+.stop,
+.sub-minutes,
+.add-minutes {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sounds-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto auto;
+  grid-gap: 3.2rem;
+}
+
+.button-sound-fire,
+.button-sound-rain,
+.button-sound-home,
+.button-sound-forest {
+  border: none;
+  background: #e1e1e6;
+  border-radius: 24px;
+  width: 13.8rem;
+  height: 15.2rem;
+
+  cursor: pointer;
+}
+
+.button-sound-fire svg,
+.button-sound-rain svg,
+.button-sound-home svg,
+.button-sound-forest svg {
+  fill: #323238;
+}
+
+.button-sound-active {
+  background-color: #02799d;
+}
+
+.path-active {
+  fill: #ffffff;
+}
