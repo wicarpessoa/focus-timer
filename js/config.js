@@ -12,6 +12,14 @@ const pathFire = document.querySelector(".path-fire");
 const pathHome = document.querySelector(".path-home");
 const minutesDisplay = document.querySelector(".minutes");
 const secondsDisplay = document.querySelector(".seconds");
+const buttonLightTheme = document.querySelector(".light");
+const buttonDarkTheme = document.querySelector(".dark");
+const body = document.querySelector("body");
+
+const inputSoundForest = document.querySelector(".input_volume_forest");
+const inputSoundRain = document.querySelector(".input_volume_rain");
+const inputSoundFire = document.querySelector(".input_volume_fire");
+const inputSoundHome = document.querySelector(".input_volume_home");
 
 export {
   buttonPlay,
@@ -28,4 +36,11 @@ export {
   pathHome,
   minutesDisplay,
   secondsDisplay,
+  buttonLightTheme,
+  buttonDarkTheme,
+  body,
+  inputSoundForest,
+  inputSoundRain,
+  inputSoundHome,
+  inputSoundFire,
 };

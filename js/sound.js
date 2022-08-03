@@ -38,5 +38,9 @@ export default function sound() {
     pressRainSound,
     pressFireSound,
     pressHomeSound,
+    FireSound,
+    RainSound,
+    HomeSound,
+    ForestSound,
   };
 }

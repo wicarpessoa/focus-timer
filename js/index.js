@@ -14,6 +14,13 @@ import {
   pathForest,
   pathRain,
   pathHome,
+  buttonLightTheme,
+  buttonDarkTheme,
+  body,
+  inputSoundForest,
+  inputSoundHome,
+  inputSoundRain,
+  inputSoundFire,
   minutesDisplay,
   secondsDisplay,
 } from "./config.js";
@@ -27,6 +34,9 @@ const controls = Controls({
   pathForest,
   pathHome,
   pathRain,
+  buttonLightTheme,
+  buttonDarkTheme,
+  body,
 });
 
 const sound = Sound();
@@ -76,4 +86,26 @@ buttonSoundFire.addEventListener("click", function () {
 buttonSoundHome.addEventListener("click", function () {
   sound.pressHomeSound();
   controls.SoundHome();
+});
+
+buttonLightTheme.addEventListener("click", function () {
+  controls.lightTheme();
+});
+
+buttonDarkTheme.addEventListener("click", function () {
+  controls.darkTheme();
+});
+
+inputSoundRain.addEventListener("change", function () {
+  sound.RainSound.volume = inputSoundRain.value / 100;
+});
+inputSoundHome.addEventListener("change", function () {
+  sound.HomeSound.volume = inputSoundHome.value / 100;
+});
+
+inputSoundForest.addEventListener("change", function () {
+  sound.ForestSound.volume = inputSoundForest.value / 100;
+});
+inputSoundFire.addEventListener("change", function () {
+  sound.FireSound.volume = inputSoundFire.value / 100;
 });
